@@ -214,4 +214,31 @@ footer {
 
 
 #servicios ul li {
-  font-size: 
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Estilos específicos para nosotros.html */
+#nosotros form input,
+#nosotros form textarea,
+#nosotros form button {
+  width: calc(100% - 30px); /* Ajuste para evitar que los elementos se desborden */
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #c1d9cd;
+  border-radius: 5px;
+}
+
+#nosotros form button {
+  background-color: #eb613b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#nosotros form button:hover {
+  background-color: #f98f6f;
+}
+
