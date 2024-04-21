@@ -14,6 +14,77 @@ body {
   max-width: 1200px;
 }
 
+/* Estilos específicos para propiedades.html */
+#propiedades {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#propiedades h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.property {
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  position: relative; /* Agregado para posicionar el texto de "En venta" */
+}
+
+.property img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.property-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.property-overlay p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.property-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.property-description p {
+  margin: 5px 0;
+}
+
+.property-price {
+  font-weight: bold;
+  color: #f38d81;
+}
+
+
 header {
   background-color: #82404f; /* Cambiado el color del encabezado */
   padding: 20px 0;
