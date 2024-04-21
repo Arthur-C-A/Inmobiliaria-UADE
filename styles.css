@@ -3,6 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% de la altura de la ventana visible */
 }
 
 .container {
@@ -46,6 +49,10 @@ nav ul li a:hover {
   color: #f98f6f;
 }
 
+main {
+  flex: 1; /* El contenido principal se expandirá para ocupar el espacio restante */
+}
+
 footer {
   background-color: #612f44; /* Cambiado el color del pie de página */
   padding: 20px 0;
@@ -54,12 +61,10 @@ footer {
   margin-top: auto; /* Coloca el footer al final de la página */
 }
 
-footer p {
-  margin: 0;
-}
-
-footer img {
-  vertical-align: middle;
+/* Hacer que las imágenes sean responsivas */
+.property img {
+  max-width: 100%; /* Hace que la imagen se ajuste automáticamente al ancho de su contenedor */
+  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente para mantener la proporción */
 }
 
 /* Estilos específicos para index.html */
@@ -179,3 +184,4 @@ footer img {
 #contacto form button:hover {
   background-color: #f98f6f;
 }
+
