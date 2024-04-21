@@ -166,7 +166,7 @@ footer {
 #contacto form input,
 #contacto form textarea,
 #contacto form button {
-  width: 100%;
+  width: calc(100% - 30px); /* Ajuste para evitar que los elementos se desborden */
   padding: 15px;
   margin-bottom: 15px;
   border: 1px solid #c1d9cd;
