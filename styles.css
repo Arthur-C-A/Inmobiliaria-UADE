@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  header, footer {
+    padding: 20px 0;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #eb613b; /* Color de fondo del encabezado */
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f98f6f; /* Color al pasar el ratón */
+  }
+  
+  main {
+    background-color: #f7eadc; /* Color de fondo del contenido principal */
+    padding: 20px 0;
+  }
+  
+  section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajuste para el espacio entre propiedades */
+    margin-top: -20px; /* Ajuste para la separación superior */
+  }
+  
+  .property {
+    width: calc(50% - 20px); /* Tamaño de las propiedades, 2 por fila */
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .property:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+  }
+  
+  .property img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #c1d9cd; /* Línea divisoria */
+  }
+  
+  .property h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .property .price {
+    font-size: 18px;
+    margin: 0;
+    color: #eb613b; /* Precio */
+  }
+  
+  .property .location {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  form {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c1d9cd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #eb613b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #f98f6f; /* Color del botón al pasar el ratón */
+  }
+  
+  /* Media queries para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .property {
+      width: calc(100% - 20px); /* Tamaño de las propiedades, 1 por fila */
+    }
+  }
