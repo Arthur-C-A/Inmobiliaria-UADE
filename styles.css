@@ -219,10 +219,28 @@ footer {
   color: #666;
 }
 
-/* Estilos específicos para nosotros.html */
-#nosotros form input,
-#nosotros form textarea,
-#nosotros form button {
+/* Estilos específicos para contacto.html */
+#contacto {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contacto p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+#contacto form input,
+#contacto form textarea,
+#contacto form button {
   width: calc(100% - 30px); /* Ajuste para evitar que los elementos se desborden */
   padding: 15px;
   margin-bottom: 15px;
@@ -230,7 +248,7 @@ footer {
   border-radius: 5px;
 }
 
-#nosotros form button {
+#contacto form button {
   background-color: #eb613b;
   color: #fff;
   border: none;
@@ -238,7 +256,9 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-#nosotros form button:hover {
+#contacto form button:hover {
   background-color: #f98f6f;
 }
+
+
 
