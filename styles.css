@@ -203,5 +203,15 @@ footer {
   margin: 0;
 }
 
+/* Estilos específicos para propiedades.html */
+.property img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #82404f; /* Grosor del borde aumentado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+
 #servicios ul li {
   font-size: 
