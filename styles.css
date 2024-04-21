@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #82404f; /* Cambio de color */
+  background-color: #82404f; /* Cambiado el color del encabezado */
   padding: 20px 0;
   color: #fff;
 }
@@ -43,11 +43,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f38d81; /* Cambio de color */
+  color: #f98f6f;
 }
 
 footer {
-  background-color: #612f44; /* Cambio de color */
+  background-color: #612f44; /* Cambiado el color del pie de página */
   padding: 20px 0;
   color: #fff;
   text-align: center;
@@ -70,29 +70,29 @@ footer img {
 #inicio h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #f4c092; /* Cambiado el color del título */
 }
 
 #inicio p {
-  font-size: 20px; /* Aumentamos el tamaño del texto */
-  line-height: 1.8; /* Incrementamos el interlineado */
+  font-size: 20px;
+  line-height: 1.8;
   margin-bottom: 30px;
-  color: #666;
+  color: #f38d81; /* Cambiado el color del texto */
 }
 
 #inicio .btn {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #f38d81; /* Cambio de color */
+  background-color: #f38d81; /* Cambiado el color del botón */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  font-size: 18px; /* Aumentamos el tamaño del texto del botón */
+  font-size: 18px;
 }
 
 #inicio .btn:hover {
-  background-color: #f4c092; /* Cambio de color */
+  background-color: #b75d69; /* Cambiado el color del botón al pasar el ratón */
 }
 
 /* Estilos específicos para nosotros.html */
@@ -168,7 +168,7 @@ footer img {
 }
 
 #contacto form button {
-  background-color: #f38d81; /* Cambio de color */
+  background-color: #eb613b;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -176,64 +176,5 @@ footer img {
 }
 
 #contacto form button:hover {
-  background-color: #f4c092; /* Cambio de color */
-}
-
-/* Estilos para el responsive */
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 15px 0;
-  }
-
-  header h1 {
-    font-size: 24px;
-  }
-
-  nav ul li {
-    margin-right: 10px;
-  }
-
-  #inicio h2 {
-    font-size: 24px;
-  }
-
-  #inicio p {
-    font-size: 16px;
-  }
-
-  #inicio .btn {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  #nosotros h2 {
-    font-size: 24px;
-  }
-
-  #nosotros p {
-    font-size: 16px;
-  }
-
-  #servicios h2 {
-    font-size: 24px;
-  }
-
-  #servicios ul li {
-    font-size: 16px;
-  }
-
-  #contacto h2 {
-    font-size: 24px;
-  }
-
-  #contacto p {
-    font-size: 16px;
-  }
-
-  #contacto form input,
-  #contacto form textarea,
-  #contacto form button {
-    padding: 10px;
-    font-size: 14px;
-  }
+  background-color: #f98f6f;
 }
