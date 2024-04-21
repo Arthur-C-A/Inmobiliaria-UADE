@@ -51,6 +51,7 @@ nav ul li a:hover {
 
 main {
   flex: 1;
+  background-image: url("https://d1acdg20u0pmxj.cloudfront.net/ar/assets/media/webp/home/bg-herobanner.webp")
 }
 
 footer {
