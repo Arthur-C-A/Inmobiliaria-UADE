@@ -5,13 +5,67 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* 100% de la altura de la ventana visible */
+  min-height: 100vh;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+header {
+  background-color: #82404f;
+  padding: 20px 0;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f98f6f;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #612f44;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Hacer que las imágenes sean responsivas */
+.property img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Estilos específicos para propiedades.html */
@@ -36,13 +90,7 @@ body {
 .property {
   width: calc(50% - 20px);
   margin-bottom: 40px;
-  position: relative; /* Agregado para posicionar el texto de "En venta" */
-}
-
-.property img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  position: relative;
 }
 
 .property-overlay {
@@ -84,60 +132,6 @@ body {
   color: #f38d81;
 }
 
-
-header {
-  background-color: #82404f; /* Cambiado el color del encabezado */
-  padding: 20px 0;
-  color: #fff;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #f98f6f;
-}
-
-main {
-  flex: 1; /* El contenido principal se expandirá para ocupar el espacio restante */
-}
-
-footer {
-  background-color: #612f44; /* Cambiado el color del pie de página */
-  padding: 20px 0;
-  color: #fff;
-  text-align: center;
-  margin-top: auto; /* Coloca el footer al final de la página */
-}
-
-/* Hacer que las imágenes sean responsivas */
-.property img {
-  max-width: 100%; /* Hace que la imagen se ajuste automáticamente al ancho de su contenedor */
-  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente para mantener la proporción */
-}
-
 /* Estilos específicos para index.html */
 #inicio {
   padding: 50px 0;
@@ -147,20 +141,20 @@ footer {
 #inicio h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #f4c092; /* Cambiado el color del título */
+  color: #f4c092;
 }
 
 #inicio p {
   font-size: 20px;
   line-height: 1.8;
   margin-bottom: 30px;
-  color: #f38d81; /* Cambiado el color del texto */
+  color: #f38d81;
 }
 
 #inicio .btn {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #f38d81; /* Cambiado el color del botón */
+  background-color: #f38d81;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -169,7 +163,7 @@ footer {
 }
 
 #inicio .btn:hover {
-  background-color: #b75d69; /* Cambiado el color del botón al pasar el ratón */
+  background-color: #b75d69;
 }
 
 /* Estilos específicos para nosotros.html */
@@ -210,49 +204,4 @@ footer {
 }
 
 #servicios ul li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #666;
-}
-
-/* Estilos específicos para contacto.html */
-#contacto {
-  padding: 50px 0;
-  text-align: center;
-}
-
-#contacto h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#contacto p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-#contacto form input,
-#contacto form textarea,
-#contacto form button {
-  width: calc(100% - 30px); /* Ajuste para evitar que los elementos se desborden */
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #c1d9cd;
-  border-radius: 5px;
-}
-
-#contacto form button {
-  background-color: #eb613b;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#contacto form button:hover {
-  background-color: #f98f6f;
-}
-
+  font-size: 
