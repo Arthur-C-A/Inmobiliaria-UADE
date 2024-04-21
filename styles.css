@@ -118,6 +118,41 @@ body {
     border: 1px solid #c1d9cd;
     border-radius: 5px;
   }
+
+/* Agrega este CSS a tu archivo styles.css */
+
+#inicio {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#inicio h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#inicio p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+#inicio .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #eb613b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#inicio .btn:hover {
+  background-color: #f98f6f;
+}
+
   
   form button {
     background-color: #eb613b;
