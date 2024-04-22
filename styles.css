@@ -5,7 +5,13 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
+}
+.fondo-index{
+  background: rgba(130, 64, 79, 0.5) url('./img_resources/family-moving-using-boxes.jpg') center/cover no-repeat;
+}
+.fondo-contacto{
+  background: rgba(130, 64, 79, 0.5) url('./img_resources/oficinas_tendencias.jpeg') center/cover no-repeat;
 }
 
 .container {
@@ -19,7 +25,17 @@ header {
   padding: 20px 0;
   color: #fff;
 }
+header .container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .container img {
+  width: 100px; /* Tamaño deseado para el logo */
+  height: auto;
+  margin-right: 10px; /* Espacio entre el logo y el texto */
 
+}
 header h1 {
   margin: 0;
   font-size: 36px;
@@ -29,7 +45,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  padding: 0;
+  padding: 25px;
   margin: 0;
 }
 
@@ -71,6 +87,7 @@ footer {
 
 /* Estilos específicos para propiedades.html */
 #propiedades {
+  top: 10px;
   padding: 50px 0;
   text-align: center;
 }
@@ -89,10 +106,11 @@ footer {
 }
 
 .property {
-  width: calc(50% - 20px);
-  margin-bottom: 40px;
-  position: relative;
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+
 }
+
 
 .property-overlay {
   position: absolute;
@@ -143,14 +161,26 @@ footer {
   font-size: 36px;
   margin-bottom: 20px;
   color: #f4c092;
+  position: absolute; /* Establece posición absoluta */
+  left: 20px; /* Ajusta la distancia desde el borde izquierdo del contenedor padre */
+  top: 120px; /* Ajusta la distancia desde el borde superior del contenedor padre */
 }
 
-#inicio p {
+#inicio .texto1 {
   font-size: 20px;
   line-height: 1.8;
-  margin-bottom: 30px;
+  position: relative;
+  right: 350px;
   color: #f38d81;
+  
 }
+#inicio .texto2 {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: 400px; /* Ajusta el margen inferior para el segundo texto */
+  color: #0f0b0b;
+}
+
 
 #inicio .btn {
   display: inline-block;
@@ -161,32 +191,15 @@ footer {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-size: 18px;
+  
 }
 
 #inicio .btn:hover {
   background-color: #b75d69;
 }
 
-/* Estilos específicos para nosotros.html */
-#nosotros {
-  padding: 50px 0;
-  text-align: center;
-}
 
-#nosotros h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#nosotros p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-/* Estilos específicos para servicios.html */
+/* Estilos específicos para servicios.html TO DO */
 #servicios {
   padding: 50px 0;
   text-align: center;
@@ -203,7 +216,7 @@ footer {
   padding: 0;
   margin: 0;
 }
-
+/* TO DO FIN*/
 /* Estilos específicos para propiedades.html */
 .property img {
   width: 100%;
@@ -228,21 +241,21 @@ footer {
 
 #contacto h2 {
   font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
+  margin-top: -20px;
+  color:#f98f6f;
 }
 
 #contacto p {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 30px;
-  color: #666;
+  margin-bottom: 20px;
+  color: #fdfdfd;
 }
 
 #contacto form input,
 #contacto form textarea,
 #contacto form button {
-  width: calc(100% - 30px); /* Ajuste para evitar que los elementos se desborden */
+  width: calc(60% - 30px); /* Ajuste para evitar que los elementos se desborden */
   padding: 15px;
   margin-bottom: 15px;
   border: 1px solid #c1d9cd;
@@ -262,4 +275,38 @@ footer {
 }
 
 
+/** nosotros**/
+.nosotros {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.principal{
+  text-align: center;
+}
+.tit-nosotros{
+  color :#f4c092;
+  font-weight: 300;
+  text-align: center;
+}
+.sub-nosotros{
+  text-align: center;
+  color:#eb613b;
+  margin-top: 10px;
+}
+.seccion-nosotros{
+  display: flex ;
+  justify-content: space-between;
+  margin-top: 100px;
+  
+}
+.subtitulos-nosotros{
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.espacio-nosotros{
+  width: calc(25% - 20px);
+  text-align: center;
+}
