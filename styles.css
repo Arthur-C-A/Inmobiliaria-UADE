@@ -145,6 +145,11 @@ footer {
 .property-description p {
   margin: 5px 0;
 }
+.property-details{
+  text-align: justify;
+  font-size: 18px;
+  
+}
 
 .property-price {
   font-weight: bold;
@@ -177,7 +182,7 @@ footer {
 #inicio .texto2 {
   font-size: 20px;
   line-height: 1.8;
-  margin-top: 400px; /* Ajusta el margen inferior para el segundo texto */
+  margin-top: 300px; /* Ajusta el margen inferior para el segundo texto */
   color: #0f0b0b;
 }
 
@@ -297,7 +302,7 @@ footer {
 .seccion-nosotros{
   display: flex ;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 40px;
   
 }
 .subtitulos-nosotros{
