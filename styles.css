@@ -318,3 +318,44 @@ footer {
   width: calc(25% - 20px);
   text-align: center;
 }
+/** Servicio**/
+.Servicio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.principal-servicio{
+  text-align: center;
+  font-size: 30px;
+}
+.tit-servicio{
+  color :#f4c092;
+  font-weight: 300;
+  text-align: center;
+}
+.sub-servicio{
+  text-align: center;
+  color:#eb613b;
+  margin-top: 10px;
+}
+.seccion-servicio{
+  display: flex;
+  flex-wrap: wrap; /* Ajuste para permitir el ajuste a dos columnas */
+  justify-content: space-between;
+  margin-top: 40px;
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  margin-left: auto; /* Centra el contenedor en la pantalla */
+  margin-right: auto;
+  
+}
+.subtitulos-servicio{
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.espacio-servicio{
+  width: calc(50% - 20px); /* Ancho del 50% con espacio entre las columnas */
+  text-align: center;
+  margin-bottom: 20px;
+}
