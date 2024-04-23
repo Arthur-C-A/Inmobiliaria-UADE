@@ -93,9 +93,11 @@ footer {
 }
 
 #propiedades h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: -20px;
   color: #333;
+  text-align: center;
 }
 
 .properties {
@@ -288,6 +290,7 @@ footer {
 
 .principal{
   text-align: center;
+  font-size: 30px;
 }
 .tit-nosotros{
   color :#f4c092;
