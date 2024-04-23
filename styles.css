@@ -8,7 +8,8 @@ body {
   min-height: 100vh; 
 }
 .fondo-index{
-  background: rgba(130, 64, 79, 0.5) url('./img_resources/family-moving-using-boxes.jpg') center/cover no-repeat;
+  /*background: rgba(130, 64, 79, 0.5) url('./img_resources/family-moving-using-boxes.jpg') center/cover no-repeat;*/
+  background: rgba(130, 64, 79, 0.5) url('./img_resources/index-lite.jpg') center/cover no-repeat;
 }
 .fondo-contacto{
   background: rgba(130, 64, 79, 0.5) url('./img_resources/oficinas_tendencias.jpeg') center/cover no-repeat;
