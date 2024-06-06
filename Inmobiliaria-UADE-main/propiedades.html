@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <title>Inmobiliaria Lain - Propiedades</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    header {
+      background-color: #82404f;
+      padding: 20px 0;
+      color: #fff;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+
+    header .container img {
+      width: 100px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    #propiedades {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #propiedades h2 {
+      font-size: 30px;
+      margin-bottom: 50px;
+      color: #333;
+    }
+
+    .properties {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .property {
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+    }
+
+    .property img, .property video {
+      width: 100%;
+      height: auto;
+    }
+
+    .property-info {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .property-info h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #82404f;
+    }
+
+    .property-info p {
+      margin: 5px 0;
+    }
+
+    .property-price {
+      font-weight: bold;
+      color: #f38d81;
+    }
+
+    .location {
+      color: #666;
+    }
+
+    footer {
+      background-color: #612f44;
+      padding: 20px 0;
+      color: #fff;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    @media (min-width: 1024px) {
+      .property img, .property video {
+        width: 50%; /* Reduce el tamaño a la mitad (50%) en pantallas grandes */
+      }
+
+      .property-info {
+        width: 75%;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      .property img, .property video {
+        width: 100%; /* Tamaño original en pantallas pequeñas */
+      }
+
+      .property {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .property-info {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="color2">
+    <div class="container">
+      <a href="index.html">
+        <img src="./img_logo/logo-removebg-preview.png" alt="logo Lain">
+      </a>
+      <h1>Inmobiliaria Lain</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" onclick="navigateTo('index.html')">Inicio</a></li>
+          <li><a href="nosotros.html" onclick="navigateTo('nosotros.html')">Nosotros</a></li>
+          <li><a href="servicios.html" onclick="navigateTo('servicios.html')">Servicios</a></li>
+          <li><a href="propiedades.html" onclick="navigateTo('propiedades.html')">Propiedades</a></li>
+          <li><a href="contacto.html" onclick="navigateTo('contacto.html')">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="propiedades" class="color4">
+    <div class="container">
+      <h2>Propiedades en Venta</h2>
+      <div class="properties">
+        <div class="property">
+          <video src="primer video.mp4" controls muted loop></video>
+          <div class="property-info">
+            <h3>Casa Moderna</h3>
+            <p class="property-price">$150,000</p>
+            <p class="location property-details">Una casa moderna con ubicación privilegiada combina el confort contemporáneo con la conveniencia de estar en una zona codiciada. Ofrece un estilo de vida exclusivo, rodeado de servicios, naturaleza o vistas panorámicas que realzan su valor y atractivo.</p>
+          </div>
+        </div>
+        <div class="property">
+          <video src="segundo video.mp4" controls muted loop></video>
+          <div class="property-info">
+            <h3>Mancion privada</h3>
+            <p class="property-price">$100,000</p>
+            <p class="location property-details">Una mancion con una extensa historia y una arquitectura exquisita, patio de gran tamaño, viene con su propio servicio de limpieza y de botones.</p>
+          </div>
+        </div>
+        <div class="property">
+          <video src="tercer video.mp4" controls muted loop></video>
+          <div class="property-info">
+            <h3>Condominio de Lujo</h3>
+            <p class="property-price">$300,000</p>
+            <p class="location property-details">Un condominio de lujo ofrece un estilo de vida sofisticado y exclusivo, con una amplia gama de comodidades de primera clase. Desde piscinas y gimnasios de alta gama hasta áreas de recreación y salones elegantes, estas amenidades están diseñadas para ofrecer una experiencia de vida excepcional y satisfacer las necesidades más exigentes de sus residentes.</p>
+          </div>
+        </div>
+        <div class="property">
+          <video src="cuarto video.mp4" controls muted loop></video>
+          <div class="property-info">
+            <h3>Cabaña acogedora</h3>
+            <p class="property-price">$500,000</p>
+            <p class="location property-details">Una cabaña rustica con una estetica hogareña, con mucha privacidad, un patio extenso y unas vista increibles de la naturaleza.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="color1">
+    <div class="container">
+      <p style="color: black;">&copy; 2024 Inmobiliaria Lain </p>
+    </div>
+  </footer>
+
+  <script>
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+
+    // Obtener todos los videos y agregar eventos para reproducir y pausar
+    document.addEventListener('DOMContentLoaded', function () {
+      const videos = document.querySelectorAll('.property video');
+
+      videos.forEach(video => {
+        video.addEventListener('mouseover', function() {
+          video.play();
+        });
+
+        video.addEventListener('mouseout', function() {
+          video.pause();
+          video.currentTime = 0; // Reiniciar el video al inicio
+        });
+      });
+    });
+  </script>
+</body>
+</html>
