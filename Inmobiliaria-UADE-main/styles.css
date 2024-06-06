@@ -1,0 +1,362 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+.fondo-index{
+  /*background: rgba(130, 64, 79, 0.5) url('./img_resources/family-moving-using-boxes.jpg') center/cover no-repeat;*/
+  background: rgba(248, 246, 246, 0.5)  center/cover no-repeat;
+}
+.fondo-contacto{
+  background: rgba(130, 64, 79, 0.5) url('./img_resources/oficinas_tendencias.jpeg') center/cover no-repeat;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #82404f;
+  padding: 20px 0;
+  color: #fff;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .container img {
+  width: 100px; /* Tamaño deseado para el logo */
+  height: auto;
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+
+}
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 25px;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f98f6f;
+}
+
+main {
+  flex: 1;
+   /* background-image: url("https://d1acdg20u0pmxj.cloudfront.net/ar/assets/media/webp/home/bg-herobanner.webp")  */
+}
+
+footer {
+  background-color: #612f44;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Hacer que las imágenes sean responsivas */
+.property img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos específicos para propiedades.html */
+#propiedades {
+  top: 10px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#propiedades h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: -20px;
+  color: #333;
+  text-align: center;
+}
+
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.property {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+
+}
+
+
+.property-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.property-overlay p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.property-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.property-description p {
+  margin: 5px 0;
+}
+.property-details{
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.property-price {
+  font-weight: bold;
+  color: #f38d81;
+}
+
+/* Estilos específicos para index.html */
+#inicio {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#inicio h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f4c092;
+  position: absolute; /* Establece posición absoluta */
+  left: 20px; /* Ajusta la distancia desde el borde izquierdo del contenedor padre */
+  top: 120px; /* Ajusta la distancia desde el borde superior del contenedor padre */
+}
+
+#inicio .texto1 {
+  font-size: 20px;
+  line-height: 1.8;
+  position: relative;
+  right: 350px;
+  color: #f38d81;
+  
+}
+#inicio .texto2 {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: 300px; /* Ajusta el margen inferior para el segundo texto */
+  color: #0f0b0b;
+}
+
+
+#inicio .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #f38d81;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  
+}
+
+#inicio .btn:hover {
+  background-color: #b75d69;
+}
+
+
+/* Estilos específicos para servicios.html TO DO */
+#servicios {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#servicios h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#servicios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* TO DO FIN*/
+/* Estilos específicos para propiedades.html */
+.property img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #82404f; /* Grosor del borde aumentado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+
+#servicios ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Estilos específicos para contacto.html */
+#contacto {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 36px;
+  margin-top: -20px;
+  color:#274eff;
+}
+
+#contacto p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #fdfdfd;
+}
+
+#contacto form input,
+#contacto form textarea,
+#contacto form button {
+  width: calc(60% - 30px); /* Ajuste para evitar que los elementos se desborden */
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #c1d9cd;
+  border-radius: 5px;
+}
+
+#contacto form button {
+  background-color: #eb613b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contacto form button:hover {
+  background-color: #f98f6f;
+}
+
+
+/** nosotros**/
+.nosotros {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.principal{
+  text-align: center;
+  font-size: 30px;
+}
+.tit-nosotros{
+  color :#f4c092;
+  font-weight: 300;
+  text-align: center;
+}
+.sub-nosotros{
+  text-align: center;
+  color:#eb613b;
+  margin-top: 10px;
+}
+.seccion-nosotros{
+  display: flex ;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+}
+.subtitulos-nosotros{
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.espacio-nosotros{
+  width: calc(25% - 20px);
+  text-align: center;
+}
+/** Servicio**/
+.Servicio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.principal-servicio{
+  text-align: center;
+  font-size: 30px;
+}
+.tit-servicio{
+  color :#f4c092;
+  font-weight: 300;
+  text-align: center;
+}
+.sub-servicio{
+  text-align: center;
+  color:#eb613b;
+  margin-top: 10px;
+}
+.seccion-servicio{
+  display: flex;
+  flex-wrap: wrap; /* Ajuste para permitir el ajuste a dos columnas */
+  justify-content: space-between;
+  margin-top: 40px;
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  margin-left: auto; /* Centra el contenedor en la pantalla */
+  margin-right: auto;
+  
+}
+.subtitulos-servicio{
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.espacio-servicio{
+  width: calc(50% - 20px); /* Ancho del 50% con espacio entre las columnas */
+  text-align: center;
+  margin-bottom: 20px;
+}

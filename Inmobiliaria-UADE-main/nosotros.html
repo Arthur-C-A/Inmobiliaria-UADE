@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inmobiliaria Lain - Nosotros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="color2">
+    <div class="container">
+      <a href="#" id="logo-link">
+        <img src="./img_logo/logo-removebg-preview.png" alt="logo Lain">
+      </a>
+      <h1>Inmobiliaria Lain</h1>
+      <nav>
+        <ul>
+          <li><a href="#" id="inicio-link">Inicio</a></li>
+          <li><a href="#" id="nosotros-link">Nosotros</a></li>
+          <li><a href="#" id="servicios-link">Servicios</a></li>
+          <li><a href="#" id="propiedades-link">Propiedades</a></li>
+          <li><a href="#" id="contacto-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="nosotros" class="color1">
+    <div class="container">
+      <h2 class="principal">Quienes somos</h2>
+      <p class="sub-nosotros">Somos un equipo de profesionales con años de experiencia en el mercado inmobiliario. Nuestro objetivo es ayudarte a encontrar la propiedad perfecta para ti.</p>
+      <div class="seccion-nosotros">
+        <div class="espacio-nosotros">
+          <img src="./img_nosotros/leadership (1).png" alt="Mision" width="100" height="100">
+          <h3 class="tit-nosotros">Misión</h3>
+          <p class="subtitulos-nosotros">Nuestra misión es proporcionar un servicio excepcional y personalizado a cada cliente, garantizando que su experiencia de compra o venta sea fluida, sin problemas y gratificante.</p>
+        </div>
+        <div class="espacio-nosotros">
+          <img src="./img_nosotros/vision.png" alt="Vision" width="100" height="100">
+          <h3 class="tit-nosotros">Visión</h3>
+          <p class="subtitulos-nosotros">Nuestra visión es simple pero poderosa: ser la primera opción para aquellos que buscan no solo una propiedad, sino un lugar donde puedan hacer realidad sus sueños y construir recuerdos duraderos.</p>
+        </div>
+        <div class="espacio-nosotros">
+          <img src="./img_nosotros/service.png" alt="Servicio" width="100" height="100">
+          <h3 class="tit-nosotros">Servicio</h3>
+          <p class="subtitulos-nosotros">Nuestros clientes reciben un trato profesional y personalizado formando una relación muchas más que una entre de un inmueble.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="color1">
+    <div class="container">
+      <p style="color: black;">&copy; 2024 Inmobiliaria Lain </p>
+    </div>
+  </footer>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+
+    document.getElementById("logo-link").onclick = function() {
+      navigateTo('index.html');
+    };
+    document.getElementById("inicio-link").onclick = function() {
+      navigateTo('index.html');
+    };
+    document.getElementById("nosotros-link").onclick = function() {
+      navigateTo('nosotros.html');
+    };
+    document.getElementById("servicios-link").onclick = function() {
+      navigateTo('servicios.html');
+    };
+    document.getElementById("propiedades-link").onclick = function() {
+      navigateTo('propiedades.html');
+    };
+    document.getElementById("contacto-link").onclick = function() {
+      navigateTo('contacto.html');
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inmobiliaria Lain - Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="fondo-contacto">
+  <header class="color2">
+    <div class="container">
+      <a href="index.html">
+        <img src="./img_logo/logo-removebg-preview.png" alt="logo Lain">
+      </a>
+      <h1>Inmobiliaria Lain</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="propiedades.html">Propiedades</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  </section>
+
+  <section id="contacto" class="color2">
+    <div class="container">
+      <form id="contactForm" action="#" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="color1">
+    <div class="container">
+      <p style="color: black;">&copy; 2024 Inmobiliaria Lain </p>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function() {
+      $('#contactForm').submit(function(event) {
+        event.preventDefault(); // Evita el envío del formulario
+        alert('Información recibida');
+      });
+    });
+  </script>
+</body>
+</html>
+
