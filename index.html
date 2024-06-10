@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inmobiliaria Lain - Inicio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#inicio-btn").click(function(){
+        window.location.href = "index.html";
+      });
+      $("#nosotros-btn").click(function(){
+        window.location.href = "nosotros.html";
+      });
+      $("#servicios-btn").click(function(){
+        window.location.href = "servicios.html";
+      });
+      $("#propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+      $("#contacto-btn").click(function(){
+        window.location.href = "contacto.html";
+      });
+      $("#explorar-propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+    });
+  </script>
 </head>
 <body class="fondo-index">
   <header class="color2">
@@ -15,11 +38,11 @@
       <h1>Inmobiliaria Lain</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="propiedades.html">Propiedades</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li id="inicio-btn"><a href="#">Inicio</a></li>
+          <li id="nosotros-btn"><a href="#">Nosotros</a></li>
+          <li id="servicios-btn"><a href="#">Servicios</a></li>
+          <li id="propiedades-btn"><a href="#">Propiedades</a></li>
+          <li id="contacto-btn"><a href="#">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -30,7 +53,7 @@
       <h2>Bienvenido a Inmobiliaria Lain</h2>
       <p class="texto1">Encuentra el hogar de tus sueños con nosotros.</p>
       <p class="texto2">Con nuestro equipo de expertos en bienes raíces, te guiaremos en cada paso del camino, desde la búsqueda hasta la firma del contrato. Estamos aquí para convertir tus sueños en realidad.</p>
-      <a href="propiedades.html" class="btn">Explora nuestras propiedades</a>
+      <a href="#" id="explorar-propiedades-btn" class="btn">Explora nuestras propiedades</a>
     </div>
   </main>
   

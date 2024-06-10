@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inmobiliaria Lain - Contacto</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#inicio-btn").click(function(){
+        window.location.href = "index.html";
+      });
+      $("#nosotros-btn").click(function(){
+        window.location.href = "nosotros.html";
+      });
+      $("#servicios-btn").click(function(){
+        window.location.href = "servicios.html";
+      });
+      $("#propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+      $("#contacto-btn").click(function(){
+        window.location.href = "contacto.html";
+      });
+      $("#explorar-propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+    });
+  </script>
 </head>
 <body class="fondo-contacto">
   <header class="color2">
@@ -25,16 +48,12 @@
     </div>
   </header>
   
-  <section id="contacto" class="color2">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Ponete en contacto con nosotros, estamos encantados de recibirte en nuestras oficinas</p>
-    </div>
+  
   </section>
 
   <section id="contacto" class="color2">
     <div class="container">
-      <form action="#" method="post">
+      <form id="contactForm" action="#" method="post">
         <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Correo electrónico" required>
         <textarea name="mensaje" placeholder="Mensaje" required></textarea>
@@ -49,5 +68,14 @@
     </div>
   </footer>
 
+  <script>
+    $(document).ready(function() {
+      $('#contactForm').submit(function(event) {
+        event.preventDefault(); // Evita el envío del formulario
+        alert('Información Enviada');
+      });
+    });
+  </script>
 </body>
 </html>
+

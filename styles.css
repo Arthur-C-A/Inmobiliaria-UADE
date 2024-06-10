@@ -9,7 +9,7 @@ body {
 }
 .fondo-index{
   /*background: rgba(130, 64, 79, 0.5) url('./img_resources/family-moving-using-boxes.jpg') center/cover no-repeat;*/
-  background: rgba(130, 64, 79, 0.5) url('./img_resources/index-lite.jpg') center/cover no-repeat;
+  background: url('./img_nosotros/mujer-mostrando-mano-mini-casa-concepto-inmobiliario-ai-generativo.jpg')  center/cover no-repeat;
 }
 .fondo-contacto{
   background: rgba(130, 64, 79, 0.5) url('./img_resources/oficinas_tendencias.jpeg') center/cover no-repeat;
@@ -80,15 +80,7 @@ footer {
 }
 
 /* Hacer que las imágenes sean responsivas */
-.property img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Estilos específicos para propiedades.html */
 #propiedades {
-  top: 10px;
   padding: 50px 0;
   text-align: center;
 }
@@ -96,62 +88,52 @@ footer {
 #propiedades h2 {
   font-size: 30px;
   margin-bottom: 50px;
-  margin-top: -20px;
   color: #333;
-  text-align: center;
 }
 
 .properties {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: -20px;
 }
 
 .property {
-  width: calc(25% - 20px);
+  width: calc(50% - 20px);
   margin-bottom: 20px;
-
-}
-
-
-.property-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid #ccc;
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
 }
 
-.property-overlay p {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.property-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.property img, .property video {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  color: #fff;
-  font-size: 18px;
+  height: auto;
 }
 
-.property-description p {
-  margin: 5px 0;
+.property-info {
+  width: 100%;
+  padding: 15px;
+  flex :1;
+  justify-content: center;
+  text-align: left;
 }
-.property-details{
-  text-align: justify;
-  font-size: 18px;
-  
+
+.property-info h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #82404f;
+}
+
+.property-info p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
 }
 
 .property-price {
@@ -159,6 +141,35 @@ footer {
   color: #f38d81;
 }
 
+.location {
+  color: #666;
+}
+
+
+@media (min-width: 1024px) {
+  .property img, .property video {
+    width: 50%; /* Reduce el tamaño a la mitad (50%) en pantallas grandes */
+  }
+
+  .property-info {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .property img, .property video {
+    width: 100%; /* Tamaño original en pantallas pequeñas */
+  }
+
+  .property {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .property-info {
+    width: 100%;
+  }
+}
 /* Estilos específicos para index.html */
 #inicio {
   padding: 50px 0;
@@ -185,8 +196,8 @@ footer {
 #inicio .texto2 {
   font-size: 20px;
   line-height: 1.8;
-  margin-top: 300px; /* Ajusta el margen inferior para el segundo texto */
-  color: #0f0b0b;
+  margin-bottom: 180px; /* Ajusta el margen inferior para el segundo texto */
+  color: #f4c092;
 }
 
 
@@ -199,6 +210,7 @@ footer {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-size: 18px;
+  margin-top:290px
   
 }
 
@@ -250,7 +262,7 @@ footer {
 #contacto h2 {
   font-size: 36px;
   margin-top: -20px;
-  color:#f98f6f;
+  color:#274eff;
 }
 
 #contacto p {

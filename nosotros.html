@@ -5,21 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inmobiliaria Lain - Nosotros</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#inicio-btn").click(function(){
+        window.location.href = "index.html";
+      });
+      $("#nosotros-btn").click(function(){
+        window.location.href = "nosotros.html";
+      });
+      $("#servicios-btn").click(function(){
+        window.location.href = "servicios.html";
+      });
+      $("#propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+      $("#contacto-btn").click(function(){
+        window.location.href = "contacto.html";
+      });
+      $("#explorar-propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+    });
+  </script>
 </head>
 <body>
   <header class="color2">
     <div class="container">
-      <a href="index.html">
+      <a href="#" id="logo-link">
         <img src="./img_logo/logo-removebg-preview.png" alt="logo Lain">
       </a>
       <h1>Inmobiliaria Lain</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="propiedades.html">Propiedades</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#" id="inicio-link">Inicio</a></li>
+          <li><a href="#" id="nosotros-link">Nosotros</a></li>
+          <li><a href="#" id="servicios-link">Servicios</a></li>
+          <li><a href="#" id="propiedades-link">Propiedades</a></li>
+          <li><a href="#" id="contacto-link">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -49,12 +72,46 @@
     </div>
   </section>
   
-
   <footer class="color1">
     <div class="container">
       <p style="color: black;">&copy; 2024 Inmobiliaria Lain </p>
     </div>
   </footer>
 
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+
+    document.getElementById("logo-link").onclick = function() {
+      navigateTo('index.html');
+    };
+    document.getElementById("inicio-link").onclick = function() {
+      navigateTo('index.html');
+    };
+    document.getElementById("nosotros-link").onclick = function() {
+      navigateTo('nosotros.html');
+    };
+    document.getElementById("servicios-link").onclick = function() {
+      navigateTo('servicios.html');
+    };
+    document.getElementById("propiedades-link").onclick = function() {
+      navigateTo('propiedades.html');
+    };
+    document.getElementById("contacto-link").onclick = function() {
+      navigateTo('contacto.html');
+    };
+    document.querySelectorAll('.espacio-nosotros').forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        icon.style.transform = 'scale(1.1)';
+        icon.style.filter = 'focus(10px)';
+      });
+
+      icon.addEventListener('mouseout', () => {
+        icon.style.transform = 'scale(1)';
+        icon.style.filter = 'none';
+      });
+    });
+  </script>
 </body>
 </html>

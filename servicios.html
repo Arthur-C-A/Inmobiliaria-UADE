@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inmobiliaria Lain - Nosotros</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#inicio-btn").click(function(){
+        window.location.href = "index.html";
+      });
+      $("#nosotros-btn").click(function(){
+        window.location.href = "nosotros.html";
+      });
+      $("#servicios-btn").click(function(){
+        window.location.href = "servicios.html";
+      });
+      $("#propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+      $("#contacto-btn").click(function(){
+        window.location.href = "contacto.html";
+      });
+      $("#explorar-propiedades-btn").click(function(){
+        window.location.href = "propiedades.html";
+      });
+    });
+  </script>
 </head>
 <body>
   <header class="color2">
@@ -59,6 +82,22 @@
       <p style="color: black;">&copy; 2024 Inmobiliaria Lain </p>
     </div>
   </footer>
+  <script>
+     function navigateTo(url) {
+      window.location.href = url;
+    }
+    document.querySelectorAll('.tit-servicio').forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        icon.style.transform = 'scale(1.1)';
+        icon.style.filter = 'focus(10px)';
+      });
 
+      icon.addEventListener('mouseout', () => {
+        icon.style.transform = 'scale(1)';
+        icon.style.filter = 'none';
+      });
+    });
+
+    </script>
 </body>
 </html>
